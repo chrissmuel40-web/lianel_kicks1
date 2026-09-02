@@ -1,0 +1,72 @@
+    /* Pastikan warna dasar tetap hitam agar tidak putih polos */
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigasi & Header */
+.nav-links { display: flex; list-style: none; align-items: center; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: #888; text-decoration: none; font-size: 0.85rem; transition: 0.3s; }
+.nav-links a:hover { color: #fff; }
+
+/* Hero Section */
+.hero { 
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('../images/store-bg.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Modal / Popup Detail Sepatu */
+.modal-overlay { 
+    display: none; 
+    position: fixed; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.95); 
+    z-index: 2000;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.modal-detail-box { 
+    background: #111; 
+    padding: 30px; 
+    border: 1px solid #333; 
+    width: 90%; 
+    max-width: 800px; 
+    border-radius: 12px;
+    position: relative; 
+}
+
+.close-btn { 
+    position: absolute; 
+    right: 20px; top: 10px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    color: #fff;
+}
+
+/* Tombol Ukuran */
+.size-btn {
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.size-btn.active {
+    background: #fff;
+    color: #000;
+}
+    
